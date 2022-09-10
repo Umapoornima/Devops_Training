@@ -6,5 +6,5 @@ Domain="AWS and Devops"
 echo "Enter your name:"
 read name
 
-echo "Hello $name, Welcome to $Domain Course in $Institute at Banglore!"
+echo "Hello $name, Welcome to $Domain Course in $Institute at Banglore!"   # "$" Reference value of the variable
 

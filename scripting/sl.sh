@@ -1,9 +1,9 @@
 #!/bin/bash
 for i in "$@"
 do
-	echo "values from @ in loop $i"
+	echo "for loop in $i"
 done
 for i in $*
 do
-	echo "values from * in loo $i"
+	echo "for loop in $i"
 done

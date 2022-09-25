@@ -8,7 +8,7 @@ pipeline{
                     }
                     stage('test stage'){
                                       steps{
-                                       sh 'echo "Hello this is test stage!"'
+                                       sh 'echo "Hello this is test stage running on `hostname` host!"'
                                       }
                     }
 }

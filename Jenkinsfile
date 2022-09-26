@@ -8,9 +8,12 @@ pipeline{
                     }
                     stage('test stage'){
                                       steps{
-                                       sh 'echo "Hello this is test stage running on `hostname` host!"'
+                                       sh '''
+                                          echo "Hello this is test stage running on `hostname` host!"
+                                          bash ${WORKSPACE}/linux/script.sh
+                                       '''
                                       }
-                    }
+                    }             
                     stage('develop ment stage'){
                                              steps{
                                               sh 'echo "Hello this is Development stage"'

@@ -11,5 +11,10 @@ pipeline{
                                        sh 'echo "Hello this is test stage running on `hostname` host!"'
                                       }
                     }
+                    stage('develop ment stage'){
+                                             steps{
+                                              sh 'echo "Hello this is Development stage"'
+                                             }
+                    }
 }
 }

@@ -8,6 +8,6 @@ if rpm -qa | grep -q $package
 then
 	echo "$package is installed `rpm -qa $package`"
 else
-	echo "$package is not installed"
+	echo "package is not installed"
 fi
 	
